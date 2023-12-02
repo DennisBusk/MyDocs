@@ -55,9 +55,22 @@ Efter oprettelse af en bruger og log ind, kan du:
 - Se og downloade dine og delte dokumenter/billeder.
 - Bulk dele og downloade dokumenter/billeder
 
+9. Google Storage<br>
+Der er tilføjet cors opsætningtil google storage, så det er muligt at "preview" de uploadede billeder
+- Jeg har brugt Google Cloud Console til det.
+- Først har jeg oprettet cors.json filen i console<br>
+- <code>echo '[{"origin": ["*"],"responseHeader": ["Content-Type"],"method": ["*"],"maxAgeSeconds": 3600}]' > cors.json</code>
+- Næst har jeg tilføjet den til min bucket
+- <code>gsutil cors set cors.json gs://mydocs-bucket</code>
+
+
 <br><br>
 Alt i alt har dette taget lidt over 6 timer.
 Google cloud store drillede mig en lille smule mht download.
+
+Der er desværre ikke lavet nogle tests, da jeg ikke har haft tid til det.<br>
+Min foretrukne måde er test driven development.<br>
+Men det er en fremgangsmåde jeg stadig er ved at tilegne mig, derfor det ikke er prioriteret her.
 
 Venlig hilsen<br>
 Dennis Busk
