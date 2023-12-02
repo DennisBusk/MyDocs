@@ -1,0 +1,8 @@
+[
+  {
+    "origin": ["https://mydocs.dennisbusk.dk","https://MyDocs.test","https://MyDocs.inv"],
+    "method": ["GET"],
+    "responseHeader": ["Content-Type"],
+    "maxAgeSeconds": 3600
+  }
+]
