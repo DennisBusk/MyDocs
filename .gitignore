@@ -40,3 +40,5 @@ Homestead.yaml
 Homestead.json
 /.vagrant
 .phpunit.result.cache
+gcs.json
+*/gcs.json
